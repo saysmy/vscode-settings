@@ -1,0 +1,32 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    // ctrl+d 删除当前行
+    {
+        "key": "ctrl+delete",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // ctrl+shift+d 复制当前行到下一行
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // ctrl+shift+/ 多行注释
+    {
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus"
+    },
+    // ctrl+l 选中某一行
+    {
+        "key": "ctrl+l",
+        "command": "expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    }
+]
